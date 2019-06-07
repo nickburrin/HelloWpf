@@ -1,0 +1,34 @@
+﻿<Window x:Class="HelloWpf.basic_controls.ButtonSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ButtonSample" Height="180" Width="250">
+    
+	<StackPanel Margin="10">
+		<Button>Hello, world!</Button>
+		
+		<Button Click="HelloWorldButton_Click">Hello, World!</Button>
+		
+		<Button Background="Beige" Foreground="Blue" FontWeight="Bold">Formatted Button</Button>
+		
+		<Button>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Formatted</TextBlock>
+				<TextBlock Foreground="Blue" FontWeight="Bold" Margin="2,0">Button</TextBlock>
+				<TextBlock Foreground="Gray" FontStyle="Italic">[Various]</TextBlock>
+			</StackPanel>
+		</Button>
+
+		<Button Padding="5">
+			<StackPanel Orientation="Horizontal">
+				<Image Source="/WpfTutorialSamples;component/Images/help.png" />
+				<TextBlock Margin="5,0">Help</TextBlock>
+			</StackPanel>
+		</Button>
+	</StackPanel>
+
+	<Window.Resources>
+		<Style TargetType="{x:Type Button}">
+			<Setter Property="Padding" Value="5,2"/>
+		</Style>
+	</Window.Resources>
+</Window>
