@@ -67,6 +67,15 @@
     <Compile Include="commands\CustomCommandSample.xaml.cs">
       <DependentUpon>CustomCommandSample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="common_interface_controls\MenuIconCheckableSample.xaml.cs">
+      <DependentUpon>MenuIconCheckableSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="common_interface_controls\MenuSample.xaml.cs">
+      <DependentUpon>MenuSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="common_interface_controls\MenuWithCommandsSample.xaml.cs">
+      <DependentUpon>MenuWithCommandsSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="data_binding\ChangeNotificationSample.xaml.cs">
       <DependentUpon>ChangeNotificationSample.xaml</DependentUpon>
     </Compile>
@@ -197,6 +206,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="commands\CustomCommandSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="common_interface_controls\MenuIconCheckableSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="common_interface_controls\MenuSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="common_interface_controls\MenuWithCommandsSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -494,6 +515,8 @@
   <ItemGroup>
     <Resource Include="images\page_white.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
