@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="commands\CommandCanExecuteSample.xaml.cs">
+      <DependentUpon>CommandCanExecuteSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="commands\CommandsWithCommandTargetSample.xaml.cs">
+      <DependentUpon>CommandsWithCommandTargetSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="commands\UsingCommandsSample.xaml.cs">
+      <DependentUpon>UsingCommandsSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="commands\CustomCommandSample.xaml.cs">
+      <DependentUpon>CustomCommandSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="data_binding\ChangeNotificationSample.xaml.cs">
       <DependentUpon>ChangeNotificationSample.xaml</DependentUpon>
     </Compile>
@@ -172,6 +184,22 @@
     <Compile Include="user_controls\LimitedInputUserControl.xaml.cs">
       <DependentUpon>LimitedInputUserControl.xaml</DependentUpon>
     </Compile>
+    <Page Include="commands\CommandCanExecuteSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="commands\CommandsWithCommandTargetSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="commands\UsingCommandsSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="commands\CustomCommandSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="data_binding\ChangeNotificationSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
