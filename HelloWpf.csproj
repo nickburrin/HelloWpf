@@ -100,6 +100,18 @@
     <Compile Include="data_binding\StringFormatSample.xaml.cs">
       <DependentUpon>StringFormatSample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="misc_controls\BorderSample.xaml.cs">
+      <DependentUpon>BorderSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="misc_controls\ProgressBarIndeterminateSample.xaml.cs">
+      <DependentUpon>ProgressBarIndeterminateSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="misc_controls\SliderSample.xaml.cs">
+      <DependentUpon>SliderSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="misc_controls\SliderValueChangedSample.xaml.cs">
+      <DependentUpon>SliderValueChangedSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="panels\GridColRowSpan.xaml.cs">
       <DependentUpon>GridColRowSpan.xaml</DependentUpon>
     </Compile>
@@ -187,11 +199,17 @@
     <Compile Include="introduction\ExceptionHandlingSample.xaml.cs">
       <DependentUpon>ExceptionHandlingSample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="misc_controls\ProgressBarTaskOnUiThread.xaml.cs">
+      <DependentUpon>ProgressBarTaskOnUiThread.xaml</DependentUpon>
+    </Compile>
     <Compile Include="user_controls\LimitedInputSample.xaml.cs">
       <DependentUpon>LimitedInputSample.xaml</DependentUpon>
     </Compile>
     <Compile Include="user_controls\LimitedInputUserControl.xaml.cs">
       <DependentUpon>LimitedInputUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="misc_controls\WebBrowserControlSample.xaml.cs">
+      <DependentUpon>WebBrowserControlSample.xaml</DependentUpon>
     </Compile>
     <Page Include="commands\CommandCanExecuteSample.xaml">
       <SubType>Designer</SubType>
@@ -250,6 +268,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="data_binding\StringFormatSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="misc_controls\BorderSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="misc_controls\ProgressBarIndeterminateSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="misc_controls\SliderSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="misc_controls\SliderValueChangedSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -429,11 +463,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="misc_controls\ProgressBarTaskOnUiThread.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="user_controls\LimitedInputSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="user_controls\LimitedInputUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="misc_controls\WebBrowserControlSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -517,6 +559,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\arrow_left.png" />
+    <Resource Include="images\arrow_right.png" />
+    <Resource Include="images\go.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
